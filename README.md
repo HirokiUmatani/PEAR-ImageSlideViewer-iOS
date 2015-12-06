@@ -16,7 +16,7 @@ pod 'PEAR-ImageSlideViewer-iOS'
 
 #### □ import header file
 ```
-#import "CoreDataManager.h"
+#import "PEARImageSlideViewController.h"
 ```
 
 #### □ initialize
