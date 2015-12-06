@@ -8,6 +8,9 @@ This library will display slide images.
 ```
 pod 'PEAR-ImageSlideViewer-iOS'
 ```
+### Demo Screen
+![image slide view demo](http://pear.chat/image/imageslideview-o.gif)
+
 
 ### Usage
 
