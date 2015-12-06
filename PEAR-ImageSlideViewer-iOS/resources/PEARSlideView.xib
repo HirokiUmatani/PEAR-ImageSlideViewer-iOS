@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Vts-NB-JTL" userLabel="View" customClass="PEARSlideView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="YFj-lk-R9T" userLabel="scrollVIew">
+                    <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4I-ZN-HF8" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="600" id="o4k-Rd-iWd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="b4I-ZN-HF8" firstAttribute="leading" secondItem="YFj-lk-R9T" secondAttribute="leading" id="6i1-IU-D14"/>
+                        <constraint firstAttribute="bottom" secondItem="b4I-ZN-HF8" secondAttribute="bottom" id="GzO-0z-xsT"/>
+                        <constraint firstItem="b4I-ZN-HF8" firstAttribute="height" secondItem="YFj-lk-R9T" secondAttribute="height" id="KcD-5W-WW1"/>
+                        <constraint firstAttribute="trailing" secondItem="b4I-ZN-HF8" secondAttribute="trailing" id="WB6-Ig-JvP"/>
+                        <constraint firstItem="b4I-ZN-HF8" firstAttribute="top" secondItem="YFj-lk-R9T" secondAttribute="top" id="lYY-FP-X4y"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nv4-jp-bJx">
+                    <rect key="frame" x="540" y="16" width="44" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="bv5-gX-UjE"/>
+                        <constraint firstAttribute="height" constant="44" id="pYB-2x-akm"/>
+                    </constraints>
+                    <state key="normal" image="close_btn.png"/>
+                    <connections>
+                        <action selector="tapCloseButton:" destination="Vts-NB-JTL" eventType="touchUpInside" id="tJ0-5b-i74"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YFj-lk-R9T" firstAttribute="top" secondItem="Vts-NB-JTL" secondAttribute="top" constant="64" id="26E-og-2fc"/>
+                <constraint firstAttribute="trailing" secondItem="YFj-lk-R9T" secondAttribute="trailing" id="31a-ER-Sz6"/>
+                <constraint firstAttribute="bottom" secondItem="YFj-lk-R9T" secondAttribute="bottom" id="CP1-O3-r3I"/>
+                <constraint firstAttribute="trailing" secondItem="nv4-jp-bJx" secondAttribute="trailing" constant="16" id="OeI-ly-PAp"/>
+                <constraint firstItem="nv4-jp-bJx" firstAttribute="top" secondItem="Vts-NB-JTL" secondAttribute="top" constant="16" id="anz-7X-XXq"/>
+                <constraint firstItem="YFj-lk-R9T" firstAttribute="leading" secondItem="Vts-NB-JTL" secondAttribute="leading" id="oyn-tw-3RN"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="b4I-ZN-HF8" id="pUz-Tw-b5F"/>
+                <outlet property="scrollView" destination="YFj-lk-R9T" id="qCe-gU-GPy"/>
+                <outlet property="scrollViewWidth" destination="o4k-Rd-iWd" id="dal-dZ-hNG"/>
+            </connections>
+            <point key="canvasLocation" x="368" y="-36"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_btn.png" width="256" height="256"/>
+    </resources>
+</document>

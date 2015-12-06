@@ -1,0 +1,10 @@
+PODS:
+  - PEAR-AutoLayout-iOS (0.0.3)
+
+DEPENDENCIES:
+  - PEAR-AutoLayout-iOS
+
+SPEC CHECKSUMS:
+  PEAR-AutoLayout-iOS: 5486f08f5b918b43b48f5a6dd364a2f00e514c00
+
+COCOAPODS: 0.39.0

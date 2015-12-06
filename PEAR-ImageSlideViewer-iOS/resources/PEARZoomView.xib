@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rrs-Rz-hmi" userLabel="View" customClass="PEARZoomView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="6un-if-7BB" userLabel="scrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="quH-0T-wid">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <animations/>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="quH-0T-wid" secondAttribute="trailing" id="0Ph-J7-e18"/>
+                        <constraint firstAttribute="bottom" secondItem="quH-0T-wid" secondAttribute="bottom" id="Bbr-mJ-qyI"/>
+                        <constraint firstItem="quH-0T-wid" firstAttribute="height" secondItem="6un-if-7BB" secondAttribute="height" id="ChN-vY-tCU"/>
+                        <constraint firstItem="quH-0T-wid" firstAttribute="top" secondItem="6un-if-7BB" secondAttribute="top" id="OJz-rZ-DuO"/>
+                        <constraint firstItem="quH-0T-wid" firstAttribute="leading" secondItem="6un-if-7BB" secondAttribute="leading" id="Sza-V3-tnK"/>
+                        <constraint firstItem="quH-0T-wid" firstAttribute="width" secondItem="6un-if-7BB" secondAttribute="width" id="pyv-Jk-kSD"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6un-if-7BB" firstAttribute="leading" secondItem="Rrs-Rz-hmi" secondAttribute="leading" id="H43-ZI-fad"/>
+                <constraint firstAttribute="bottom" secondItem="6un-if-7BB" secondAttribute="bottom" id="ZaC-Oc-OOF"/>
+                <constraint firstAttribute="trailing" secondItem="6un-if-7BB" secondAttribute="trailing" id="ZaW-WG-8W9"/>
+                <constraint firstItem="6un-if-7BB" firstAttribute="top" secondItem="Rrs-Rz-hmi" secondAttribute="top" id="qqE-Jo-0K9"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="quH-0T-wid" id="NXE-Jk-7Q7"/>
+                <outlet property="scrollView" destination="6un-if-7BB" id="cWW-Xk-Bg4"/>
+            </connections>
+        </view>
+    </objects>
+</document>
