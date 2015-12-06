@@ -24,9 +24,8 @@ pod 'PEAR-ImageSlideViewer-iOS'
 PEARImageSlideViewController *slideImageViewController = [PEARImageSlideViewController new];
 ```
 
-#### □ set image
+#### □ set image data
 ```
-// create insert instance of CoreData
 NSArray *imageLists = @[
                             [UIImage imageNamed:@"sample1.jpg"],
                             [UIImage imageNamed:@"sample2.jpg"],
