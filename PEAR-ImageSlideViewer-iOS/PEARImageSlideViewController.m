@@ -108,7 +108,5 @@
         [_slideView.contentView addSubview:zoomView];
         
     }
-    
 }
-
 @end

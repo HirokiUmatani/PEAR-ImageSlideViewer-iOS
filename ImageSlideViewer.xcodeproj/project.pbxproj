@@ -39,7 +39,7 @@
 		F409B6A51C14315C00A27553 /* sample2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample2.jpg; path = ../sample2.jpg; sourceTree = "<group>"; };
 		F409B6A61C14315C00A27553 /* sample3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample3.jpg; path = ../sample3.jpg; sourceTree = "<group>"; };
 		F409B6AE1C14328D00A27553 /* close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_btn.png; sourceTree = "<group>"; };
-		F409B6B11C143B2100A27553 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F409B6B11C143B2100A27553 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F43081421C0DCDB500D255CB /* ImageSlideViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSlideViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43081461C0DCDB500D255CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F43081481C0DCDB500D255CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -426,7 +426,7 @@
 			baseConfigurationReference = 3BA7E66C66E84E342160E1D7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: o9093009555@gmail.com (J8C9LPK4FT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: o9093009555@gmail.com (J8C9LPK4FT)";
 				INFOPLIST_FILE = ImageSlideViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -441,7 +441,7 @@
 			baseConfigurationReference = AA76B8ADB0AF39B7C960E150 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: o9093009555@gmail.com (J8C9LPK4FT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: o9093009555@gmail.com (J8C9LPK4FT)";
 				INFOPLIST_FILE = ImageSlideViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
